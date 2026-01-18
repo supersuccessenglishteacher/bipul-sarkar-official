@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSCEC Digital Dashboard - Bipul Sarkar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-dark: #1e3799;
+            --accent: #27ae60;
+            --bg: #f4f7f6;
+            --coop-color: #6c5ce7;
+        }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); margin: 0; padding: 0; }
+
+        /* Section 1: Hero Image Section */
+        .hero-section {
+            background: linear-gradient(135deg, #003057, #1e3799);
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .profile-card-img {
+            max-width: 800px;
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border: 4px solid white;
+            transition: 0.3s;
+        }
+        .profile-card-img:hover { transform: scale(1.02); }
+
+        /* Section 2: Dashboard Grid */
+        .container { max-width: 1200px; margin: -30px auto 50px; padding: 0 20px; }
+        
+        .section-title {
+            text-align: center;
+            color: #2c3e50;
+            margin-top: 60px;
+            margin-bottom: 30px;
+            font-size: 28px;
+            border-bottom: 3px solid var(--accent);
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            overflow: hidden;
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+            border-top: 5px solid var(--primary-dark);
+        }
+        .card:hover { transform: translateY(-10px); box-shadow: 0 12px 25px rgba(0,0,0,0.15); }
+
+        .card-body { padding: 25px; text-align: center; flex-grow: 1; }
+        .card-body i { font-size: 3rem; color: var(--primary-dark); margin-bottom: 15px; }
+        .card-body h3 { margin: 10px 0; color: #2c3e50; }
+        .card-body p { color: #666; font-size: 0.95rem; line-height: 1.5; }
+
+        .card-footer { padding-bottom: 25px; text-align: center; }
+        .btn {
+            display: inline-block;
+            padding: 10px 25px;
+            background: var(--primary-dark);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: 0.3s;
+            border: none;
+        }
+        .btn:hover { background: var(--accent); transform: scale(1.05); }
+
+        /* Co-operative Links Special Styling */
+        .links-list { list-style: none; padding: 0; margin: 15px 0; }
+        .links-list li { margin-bottom: 10px; }
+        .course-link {
+            display: block;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #333;
+            border: 1px solid #eee;
+            transition: 0.2s;
+        }
+        .course-link:hover { background: #eef2f7; border-color: var(--coop-color); }
+
+        /* Footer */
+        footer { background: white; text-align: center; padding: 30px; border-top: 1px solid #ddd; color: #7f8c8d; margin-top: 50px; }
+
+        @media (max-width: 600px) {
+            .profile-card-img { width: 95%; }
+            .section-title { font-size: 22px; }
+        }
+    </style>
+</head>
+<body>
+
+<section class="hero-section">
+    <img src="bipul_pic.jpg" alt="Bipul Sarkar" class="profile-card-img">
+    <div style="color: white; margin-top: 20px; font-size: 1.2rem; opacity: 0.9;">
+        Digital Learning Dashboard (2026 Edition)
+    </div>
+</section>
+
+<div class="container">
+    <div style="text-align: center;">
+        <h2 class="section-title"><i class="fas fa-graduation-cap"></i> লার্নিং ড্যাশবোর্ড ও প্রোফাইল</h2>
+    </div>
+
+    <div class="dashboard-grid">
+        
+        <div class="card" style="border-top: 5px solid #1e3799; background: #fdfdfd;">
+            <div class="card-body">
+                <div style="width: 80px; height: 80px; background: #eef2f7; border-radius: 50%; margin: 0 auto 15px; display: flex; align-items: center; justify-content: center; border: 2px solid #1e3799;">
+                    <i class="fas fa-user-tie" style="font-size: 2.5rem; color: #1e3799;"></i>
+                </div>
+                <h3 style="margin: 5px 0; color: #1e3799;">Bipul Sarkar</h3>
+                <p style="font-weight: bold; color: #2c3e50; margin-bottom: 5px;">Founder & Senior Consultant</p>
+                <div style="font-size: 0.85rem; color: #666; margin-bottom: 10px;">
+                    <p style="margin: 3px 0;"><i class="fas fa-award"></i> 30+ Years Practical Experience</p>
+                    <p style="margin: 3px 0;"><i class="fas fa-check-circle"></i> Accounts & Tax Expert</p>
+                </div>
+                <p style="font-size: 0.85rem; line-height: 1.4; color: #7f8c8d; font-style: italic;">
+                    "অভিজ্ঞতায় সমৃদ্ধ, বিশ্বস্ততায় অটল—আপনার নির্ভরযোগ্য ট্যাক্স ও অ্যাকাউন্টস পার্টনার।"
+                </p>
+            </div>
+            <div class="card-footer">
+                <a href="bipul_sarkar_biodata.html" class="btn">প্রোফাইল দেখুন <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+<div class="card" style="background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); overflow: hidden; border-top: 5px solid #8e44ad; transition: 0.3s; display: flex; flex-direction: column;">
+            <div style="padding: 25px 20px; text-align: center; flex-grow: 1;">
+                <i class="fas fa-file-contract" style="font-size: 3rem; color: #8e44ad; margin-bottom: 15px;"></i>
+                <h3 style="margin: 10px 0; color: #2c3e50; min-height: 50px;">By-law (উপবিধি)</h3>
+                <p style="color: #666; font-size: 0.95rem;">সমিতির নিজস্ব সংবিধান, উদ্দেশ্য এবং নিয়ম পরিবর্তনের সহজ পাঠ।</p>
+            </div>
+            <div style="padding-bottom: 25px; text-align: center;">
+                <a href="sscec_bylaw_guide.html" style="display: inline-block; padding: 10px 25px; background: #8e44ad; color: white; text-decoration: none; border-radius: 25px; font-weight: bold;">পড়ুন ও শুনুন</a>
+            </div>
+        </div>
+
+
+        <div class="card" style="border-top-color: #27ae60;">
+            <div class="card-body">
+                <i class="fas fa-gavel" style="color: #27ae60;"></i>
+                <h3>Co-operative Rules</h3>
+                <p>সমিতির নিবন্ধন, বোর্ড গঠন এবং সরকারি নিয়ন্ত্রণ বিধিমালা (২০১১) এর সহজ পাঠ।</p>
+            </div>
+            <div class="card-footer">
+                <a href="sscec_coop_rules_2011.html" class="btn" style="background: #27ae60;">পড়ুন ও শুনুন 🎧</a>
+            </div>
+        </div>
+
+        <div class="card" style="border-top-color: var(--coop-color);">
+            <div class="card-body">
+                <i class="fas fa-university" style="color: var(--coop-color);"></i>
+                <h3>Co-operative Society</h3>
+                <p>অ্যাকাউন্টস, অডিট এবং ডিভিডেন্ড সংক্রান্ত গাইডলাইন।</p>
+                <ul class="links-list">
+                    <li><a href="sscec_cooperative_guide.html" class="course-link">Part 1: Accounts 🎧</a></li>
+                    <li><a href="sscec_cooperative_part2.html" class="course-link">Part 2: Audit 🎧</a></li>
+                    <li><a href="sscec_cooperative_part3.html" class="course-link">Part 3: NPA & Dividend 🎧</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card" style="border-top-color: #2980b9;">
+            <div class="card-body">
+                <i class="fas fa-search-dollar" style="color: #2980b9;"></i>
+                <h3>Audit & Inspection</h3>
+                <p>সমবায় অডিটরের কাজ এবং অডিট রিপোর্ট তৈরির খুঁটিনাটি বিষয়সমূহ।</p>
+            </div>
+            <div class="card-footer">
+                <a href="sscec_auditor_role.html" class="btn" style="background: #2980b9;">বিস্তারিত দেখুন 🎧</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <strong>Super Success Computer Education Center</strong><br>
+    📍 উত্তর দমদম, পশ্চিমবঙ্গ | 📞 8017247298<br>
+    <small>© 2026 Bipul Sarkar | All Rights Reserved</small>
+</footer>
+
+</body>
+</html>
