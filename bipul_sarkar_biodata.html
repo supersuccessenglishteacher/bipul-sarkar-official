@@ -6,8 +6,8 @@
     <title>Bio-Data - Bipul Sarkar</title>
     <style>
         :root {
-            --pad-header-space: 290px; /* হেডারের গ্যাপ সামান্য কমানো হয়েছে */
-            --pad-footer-space: 120px; /* ফুটারের জন্য নিরাপদ গ্যাপ */
+            --pad-header-space: 290px; 
+            --pad-footer-space: 120px; 
         }
         body { background: #f0f2f5; margin: 0; padding: 20px; font-family: 'Segoe UI', Arial, sans-serif; }
         
@@ -15,7 +15,8 @@
             width: 850px;
             height: 1180px;
             margin: 0 auto 30px auto;
-            background: url('pad_pic1.jpg') no-repeat center top;
+            /* এখানে pad_pic2.jpg আপডেট করা হয়েছে */
+            background: url('pad_pic2.jpg') no-repeat center top;
             background-size: 100% 100%;
             padding: var(--pad-header-space) 85px var(--pad-footer-space) 85px;
             box-sizing: border-box;
@@ -25,7 +26,6 @@
             position: relative;
         }
 
-        /* লাইন স্পেসিং কমানো হয়েছে (1.8 থেকে 1.5) */
         .bio-content { line-height: 2; color: #222; font-size: 16px; }
         
         h1.title { text-align: center; text-decoration: underline; color: #003057; font-size: 24px; margin-bottom: 20px; margin-top: 0; }
@@ -43,7 +43,7 @@
 
         @media print {
             body { background: none; padding: 0; }
-            .page { box-shadow: none; margin: 0; }
+            .page { box-shadow: none; margin: 0; -webkit-print-color-adjust: exact; }
         }
     </style>
 </head>
@@ -82,7 +82,8 @@
 
 <div class="page">
     <div class="bio-content">
-</br></br> <h2 class="section-title">4. WORK BACKGROUND & EXPERTISE</h2>
+        <br><br> 
+        <h2 class="section-title">4. WORK BACKGROUND & EXPERTISE</h2>
         <div class="experience-para">
             Throughout my extensive career, I have developed a dual expertise in Advanced Accounting and IT Education. Serving as a Computer Trainer, specializing in Financial Accounting Software (Tally) and Office Productivity tools. This experience allows me to handle digital audit procedures with high precision.
         </div>
@@ -106,7 +107,8 @@
 
 <div class="page">
     <div class="bio-content">
-      </br></br>  <h2 class="section-title">7. PERSONAL ATTRIBUTES</h2>
+      <br><br>  
+      <h2 class="section-title">7. PERSONAL ATTRIBUTES</h2>
         <ul>
             <li>Expert in independent audit and office procedures.</li>
             <li>Highly disciplined, honest, and sincere towards professional duties.</li>
