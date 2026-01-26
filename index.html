@@ -11,6 +11,7 @@
             --accent: #27ae60;
             --bg: #f4f7f6;
             --coop-color: #6c5ce7;
+            --atb-gold: #f39c12;
         }
         body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); margin: 0; padding: 0; }
 
@@ -81,7 +82,7 @@
         }
         .btn:hover { background: var(--accent); transform: scale(1.05); }
 
-        /* Co-operative Links Special Styling */
+        /* Co-operative Links Styling */
         .links-list { list-style: none; padding: 0; margin: 15px 0; }
         .links-list li { margin-bottom: 10px; }
         .course-link {
@@ -93,8 +94,10 @@
             color: #333;
             border: 1px solid #eee;
             transition: 0.2s;
+            font-size: 0.9rem;
+            text-align: left;
         }
-        .course-link:hover { background: #eef2f7; border-color: var(--coop-color); }
+        .course-link:hover { background: #eef2f7; border-color: var(--coop-color); padding-left: 15px; }
 
         /* Footer */
         footer { background: white; text-align: center; padding: 30px; border-top: 1px solid #ddd; color: #7f8c8d; margin-top: 50px; }
@@ -133,7 +136,7 @@
                     <p style="margin: 3px 0;"><i class="fas fa-check-circle"></i> Accounts & Tax Expert</p>
                 </div>
                 <p style="font-size: 0.85rem; line-height: 1.4; color: #7f8c8d; font-style: italic;">
-                    "অভিজ্ঞতায় সমৃদ্ধ, বিশ্বস্ততায় অটল—আপনার নির্ভরযোগ্য ট্যাক্স ও অ্যাকাউন্টস পার্টনার।"
+                    "অভিজ্ঞতায় সমৃদ্ধ, বিশ্বস্ততায় অটল—আপনার নির্ভরযোগ্য ট্যাক্স ও অ্যাকাউন্টস পার্টনার।"
                 </p>
             </div>
             <div class="card-footer">
@@ -141,17 +144,30 @@
             </div>
         </div>
 
-<div class="card" style="background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); overflow: hidden; border-top: 5px solid #8e44ad; transition: 0.3s; display: flex; flex-direction: column;">
-            <div style="padding: 25px 20px; text-align: center; flex-grow: 1;">
-                <i class="fas fa-file-contract" style="font-size: 3rem; color: #8e44ad; margin-bottom: 15px;"></i>
-                <h3 style="margin: 10px 0; color: #2c3e50; min-height: 50px;">By-law (উপবিধি)</h3>
-                <p style="color: #666; font-size: 0.95rem;">সমিতির নিজস্ব সংবিধান, উদ্দেশ্য এবং নিয়ম পরিবর্তনের সহজ পাঠ।</p>
+        <div class="card" style="border-top-color: var(--atb-gold); background: #fffcf5;">
+            <div class="card-body">
+                <i class="fas fa-balance-scale" style="color: var(--atb-gold);"></i>
+                <h3 style="color: #d35400;">Final Account (ATB)</h3>
+                <p>বিপুল স্যারের <strong>"সোনার নিয়ম"</strong>: ট্রায়াল ব্যালেন্স থেকে ফাইনাল অ্যাকাউন্ট তৈরির ম্যাজিক ফর্মুলা।</p>
+                <div style="background: #fdf2e9; padding: 10px; border-radius: 8px; font-size: 0.85rem; color: #a04000; margin-top: 10px; border: 1px dashed var(--atb-gold);">
+                    <i class="fas fa-lightbulb"></i> বামে খরচ ও সম্পদ | ডানে আয় ও দায়
+                </div>
             </div>
-            <div style="padding-bottom: 25px; text-align: center;">
-                <a href="sscec_bylaw_guide.html" style="display: inline-block; padding: 10px 25px; background: #8e44ad; color: white; text-decoration: none; border-radius: 25px; font-weight: bold;">পড়ুন ও শুনুন</a>
+            <div class="card-footer">
+                <a href="atb_golden_rules.html" class="btn" style="background: var(--atb-gold);">সোনার নিয়ম দেখুন 🎧</a>
             </div>
         </div>
 
+        <div class="card" style="border-top-color: #8e44ad;">
+            <div class="card-body">
+                <i class="fas fa-file-contract" style="color: #8e44ad;"></i>
+                <h3 style="margin: 10px 0; color: #2c3e50;">By-law (উপবিধি)</h3>
+                <p>সমিতির নিজস্ব সংবিধান, উদ্দেশ্য এবং নিয়ম পরিবর্তনের সহজ পাঠ।</p>
+            </div>
+            <div class="card-footer">
+                <a href="sscec_bylaw_guide.html" class="btn" style="background: #8e44ad;">পড়ুন ও শুনুন 🎧</a>
+            </div>
+        </div>
 
         <div class="card" style="border-top-color: #27ae60;">
             <div class="card-body">
@@ -160,7 +176,7 @@
                 <p>সমিতির নিবন্ধন, বোর্ড গঠন এবং সরকারি নিয়ন্ত্রণ বিধিমালা (২০১১) এর সহজ পাঠ।</p>
             </div>
             <div class="card-footer">
-                <a href="sscec_coop_rules_2011.html" class="btn" style="background: #27ae60;">পড়ুন ও শুনুন 🎧</a>
+                <a href="sscec_coop_rules_2011.html" class="btn" style="background: #27ae60;">পড়ুন ও শুনুন 🎧</a>
             </div>
         </div>
 
@@ -170,9 +186,9 @@
                 <h3>Co-operative Society</h3>
                 <p>অ্যাকাউন্টস, অডিট এবং ডিভিডেন্ড সংক্রান্ত গাইডলাইন।</p>
                 <ul class="links-list">
-                    <li><a href="sscec_cooperative_guide.html" class="course-link">Part 1: Accounts 🎧</a></li>
-                    <li><a href="sscec_cooperative_part2.html" class="course-link">Part 2: Audit 🎧</a></li>
-                    <li><a href="sscec_cooperative_part3.html" class="course-link">Part 3: NPA & Dividend 🎧</a></li>
+                    <li><a href="sscec_cooperative_guide.html" class="course-link"><i class="fas fa-file-invoice"></i> Part 1: Accounts 🎧</a></li>
+                    <li><a href="sscec_cooperative_part2.html" class="course-link"><i class="fas fa-search-plus"></i> Part 2: Audit 🎧</a></li>
+                    <li><a href="sscec_cooperative_part3.html" class="course-link"><i class="fas fa-percentage"></i> Part 3: NPA & Dividend 🎧</a></li>
                 </ul>
             </div>
         </div>
@@ -181,7 +197,7 @@
             <div class="card-body">
                 <i class="fas fa-search-dollar" style="color: #2980b9;"></i>
                 <h3>Audit & Inspection</h3>
-                <p>সমবায় অডিটরের কাজ এবং অডিট রিপোর্ট তৈরির খুঁটিনাটি বিষয়সমূহ।</p>
+                <p>সমবায় অডিটরের কাজ এবং অডিট রিপোর্ট তৈরির খুঁটিনাটি বিষয়সমূহ।</p>
             </div>
             <div class="card-footer">
                 <a href="sscec_auditor_role.html" class="btn" style="background: #2980b9;">বিস্তারিত দেখুন 🎧</a>
@@ -198,6 +214,4 @@
 </footer>
 
 </body>
-
 </html>
-
